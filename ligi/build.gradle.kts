@@ -50,19 +50,19 @@ dependencies {
 
 }
 
-//publishing {
-//    publications {
-//        register<MavenPublication>("release") {
-//            groupId = "com.unwur.ligi"
-//            artifactId = "ui"
-//            version = "1.0"
-//
-//            afterEvaluate {
-//                from(components["release"])
-//            }
-//        }
-//    }
-//}
+publishing {
+    publications {
+        register<MavenPublication>("release") {
+            groupId = "com.unwur.ligi"
+            artifactId = "ui"
+            version = "1.0"
+
+            afterEvaluate {
+                from(components["release"])
+            }
+        }
+    }
+}
 
 //configure<PublishingExtension> {
 //    publishing {
